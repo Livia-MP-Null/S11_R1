@@ -110,6 +110,27 @@ Ao submeter o formulário (via POST), o PHP chama a função `atualizar()`, pass
 
 Para concluir, inclui o rodapé visual na parte inferior da tela.
 
+### 6. Entrar
+
+#### Na tela
+
+Exibe um formulário de alteração de cadastro. O primeiro campo pede a digitação do email do aluno já o sengundo campo pede a digitação da senha desse email. Há botões para confirmar as alterações ("Enviar") e para resetar o formulário ("Limpar"), e tem um cadastre-se aqui no canto da página caso não tenha um cadastro.
+
+#### No código
+É responsável por exibir e processar a tela de autenticação (login) de uma aplicação web. Na parte visual, ele carrega arquivos de cabeçalho e estilização CSS para apresentar um formulário HTML com campos de e-mail e senha, botões de envio e limpeza, e um link para a página de cadastro. No lado do servidor, ao submeter o formulário via método POST, o script captura os dados digitados e chama a função consulta_user para buscar as informações do usuário no banco de dados. Em seguida, verifica se o e-mail e a senha fornecidos correspondem aos registros encontrados; se as credenciais forem válidas, a aplicação inicia uma sessão de usuário, salva o ID referente na variável $_SESSION e redireciona o usuário para a página inicial (index.php). Caso os dados estejam incorretos ou não existam, o código permanece na mesma página e exibe uma mensagem de erro informando que as credenciais são inválidas.
+
+
+
+### 7. Sair
+
+#### Na tela
+
+Exibe um simbolo de carregamento no canto superior da pagina por conta do sleep.fazendo com que os usuários não tenham acesso oa sistema ápos logout tendo que se conectar novamente com o email para conseguir conferir as coisas novamente .
+
+#### No código
+
+Responsável por exibir e processar a tela de autenticação (login) de uma aplicação web. Na parte visual, ele carrega arquivos de cabeçalho e estilização CSS para apresentar um formulário HTML com campos de e-mail e senha, botões de envio e limpeza, e um link para a página de cadastro. No lado do servidor, ao submeter o formulário via método POST, o script captura os dados digitados e chama a função consulta_user para buscar as informações do usuário no banco de dados. Em seguida, verifica se o e-mail e a senha fornecidos correspondem aos registros encontrados; se as credenciais forem válidas, a aplicação inicia uma sessão de usuário, salva o ID referente na variável $_SESSION e redireciona o usuário para a página inicial (index.php). Caso os dados estejam incorretos ou não existam, o código permanece na mesma página e exibe uma mensagem de erro informando que as credenciais são inválidas.
+
 tabela 
 
 ```mermaid
