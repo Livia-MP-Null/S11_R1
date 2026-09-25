@@ -109,6 +109,7 @@ Na seção principal (`main`), cria o formulário contendo a entrada obrigatóri
 Ao submeter o formulário (via POST), o PHP chama a função `atualizar()`, passando a conexão do banco de dados, o ID informante e todos os novos dados digitados para substituir os registros antigos.
 
 Para concluir, inclui o rodapé visual na parte inferior da tela.
+---
 
 ### 6. Entrar
 
@@ -120,7 +121,7 @@ Exibe um formulário de alteração de cadastro. O primeiro campo pede a digita�
 É responsável por exibir e processar a tela de autenticação (login) de uma aplicação web. Na parte visual, ele carrega arquivos de cabeçalho e estilização CSS para apresentar um formulário HTML com campos de e-mail e senha, botões de envio e limpeza, e um link para a página de cadastro. No lado do servidor, ao submeter o formulário via método POST, o script captura os dados digitados e chama a função consulta_user para buscar as informações do usuário no banco de dados. Em seguida, verifica se o e-mail e a senha fornecidos correspondem aos registros encontrados; se as credenciais forem válidas, a aplicação inicia uma sessão de usuário, salva o ID referente na variável $_SESSION e redireciona o usuário para a página inicial (index.php). Caso os dados estejam incorretos ou não existam, o código permanece na mesma página e exibe uma mensagem de erro informando que as credenciais são inválidas.
 
 
-
+---
 ### 7. Sair
 
 #### Na tela
